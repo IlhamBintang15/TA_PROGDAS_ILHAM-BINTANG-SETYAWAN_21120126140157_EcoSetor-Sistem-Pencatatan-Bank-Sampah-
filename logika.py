@@ -111,3 +111,20 @@ class Transaksi:
             d["tanggal"], d["id_nasabah"], d["jenis"], d["kategori"],
             d["berat"], d["nominal"], d.get("bonus_persen", 0),
         )
+
+
+class BankSampah:
+    """Kelas pengelola yang memegang seluruh data."""
+    def __init__(self):
+        self.kategori = [] 
+        self.nasabah = []
+        self.riwayat = []
+        for nama, harga in KATEGORI_AWAL.items():
+            self.kategori.append(KategoriSampah(nama, harga))
+
+
+    def cari_nasabah(self, id_nasabah):
+        for n in self.nasabah:
+            if n.id == id_nasabah:
+                return n 
+            raise ValueError("Nasabah tidak ditemukan.")
