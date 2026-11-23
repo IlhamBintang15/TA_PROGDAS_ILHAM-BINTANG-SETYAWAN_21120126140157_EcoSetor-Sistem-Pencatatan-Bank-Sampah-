@@ -111,10 +111,3 @@ class Transaksi:
             d["tanggal"], d["id_nasabah"], d["jenis"], d["kategori"],
             d["berat"], d["nominal"], d.get("bonus_persen", 0),
         )
-
-<<<<<<< HEAD
-class BankSampah:
-    
-=======
-class BankSampah: 
->>>>>>> 6f5dfdca6c9f55e0b22371a728a846336b55ff1e
