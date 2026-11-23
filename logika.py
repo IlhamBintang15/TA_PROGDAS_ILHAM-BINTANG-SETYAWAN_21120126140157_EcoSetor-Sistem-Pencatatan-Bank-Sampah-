@@ -111,3 +111,6 @@ class Transaksi:
             d["tanggal"], d["id_nasabah"], d["jenis"], d["kategori"],
             d["berat"], d["nominal"], d.get("bonus_persen", 0),
         )
+
+class BankSampah:
+  """Kelas pengelola yang 
