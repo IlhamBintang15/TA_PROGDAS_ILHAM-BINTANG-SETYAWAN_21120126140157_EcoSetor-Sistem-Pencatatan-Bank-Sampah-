@@ -128,3 +128,8 @@ class BankSampah:
             if n.id == id_nasabah:
                 return n 
             raise ValueError("Nasabah tidak ditemukan.")
+
+    def cari_kategori(self, nama_kategori):
+        for k in self.kategori:
+            if k.nama == nama_kategori:
+                
