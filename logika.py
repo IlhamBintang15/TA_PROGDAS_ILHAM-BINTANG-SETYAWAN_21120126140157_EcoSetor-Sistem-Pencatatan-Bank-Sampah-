@@ -112,5 +112,4 @@ class Transaksi:
             d["berat"], d["nominal"], d.get("bonus_persen", 0),
         )
 
-class BankSampah:
-  """Kelas pengelola yang 
+class BankSampah: 
